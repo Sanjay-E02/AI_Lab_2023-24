@@ -14,7 +14,30 @@ To write a logic program to design a circuit like half adder and half subtractor
 8. Stop the program.
 
 ### Program:
+half_adder(A, B, Sum, Carry) :-
 
+Sum is (A + B) mod 2,
+
+Carry is (A + B) // 2.
+half_subtractor(A, B, Difference, Borrow) :-
+
+Difference is (A - B) mod 2,
+
+Borrow is (A - B) // 2.
+full_adder(A, B, CarryIn, Sum, CarryOut) :-
+
+TempSum is (A + B + CarryIn) mod 2,
+
+CarryOut is (A + B + CarryIn) // 2,
+
+Sum is TempSum.
+full_subtractor(A, B, BorrowIn, Difference, BorrowOut) :-
+
+TempDiff is (A - B - BorrowIn) mod 2,
+
+BorrowOut is (A - B - BorrowIn) // 2,
+
+Difference is TempDiff.
 
 
 
@@ -26,6 +49,10 @@ To write a logic program to design a circuit like half adder and half subtractor
 
 
 ### Output:
+![image](https://github.com/user-attachments/assets/afbce05f-c428-4be7-95c2-b2c85660cb54)
+![image](https://github.com/user-attachments/assets/df9a95e5-7fe8-4e6a-bb1c-3e76acd82c2e)
+![image](https://github.com/user-attachments/assets/ddff12bc-8fca-4a6b-b328-f8e0ceaefd9c)
+![image](https://github.com/user-attachments/assets/f728dcde-76ff-437f-91fe-1224173d12bd)
 
 
 
