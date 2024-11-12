@@ -72,4 +72,3 @@ problem(blank_display).
 ### Result:
 Thus the simple omputer maintenance expert system was built sucessfully.
 
-Thus the simple omputer maintenance expert system was built sucessfully.
